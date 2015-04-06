@@ -1,0 +1,15 @@
+//
+//  ViewController.h
+//  POC_ParsePhoto
+//
+//  Created by Mick Lerche on 4/6/15.
+//  Copyright (c) 2015 Mick Lerche. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+
+
+@end
+
