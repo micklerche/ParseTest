@@ -165,7 +165,7 @@
 - (IBAction)onLikePhotos:(id)sender {
     PCLike *likeMe = [PCLike new];
 
-    PFUser *currentUser = [PFUser currentUser];
+    //PFUser *currentUser = [PFUser currentUser];
    // likeMe.user = currentUser;
     likeMe.photo = self.photo;
 
