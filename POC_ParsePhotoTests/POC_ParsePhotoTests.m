@@ -27,7 +27,7 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssertEqualObjects(@"x", @"x");
+    XCTAssertEqualObjects(@"x", @"y");
 }
 
 - (void)testPerformanceExample {

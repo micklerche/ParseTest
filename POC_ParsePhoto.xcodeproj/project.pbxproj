@@ -32,6 +32,8 @@
 		6B68006E1AD353B300A53032 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B68006C1AD353B300A53032 /* libsqlite3.dylib */; };
 		6B68006F1AD353B300A53032 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B68006D1AD353B300A53032 /* libz.dylib */; };
 		6B6800721AD4199500A53032 /* PCPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6800711AD4199500A53032 /* PCPhoto.m */; };
+		6BC7E5D01AD6112800CECAFD /* PCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7E5C71AD6112800CECAFD /* PCComment.m */; };
+		6BC7E5D41AD6112800CECAFD /* PCLike.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7E5CF1AD6112800CECAFD /* PCLike.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,10 @@
 		6B68006D1AD353B300A53032 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		6B6800701AD4199500A53032 /* PCPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCPhoto.h; sourceTree = "<group>"; };
 		6B6800711AD4199500A53032 /* PCPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCPhoto.m; sourceTree = "<group>"; };
+		6BC7E5C61AD6112800CECAFD /* PCComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCComment.h; sourceTree = "<group>"; };
+		6BC7E5C71AD6112800CECAFD /* PCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCComment.m; sourceTree = "<group>"; };
+		6BC7E5CE1AD6112800CECAFD /* PCLike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCLike.h; sourceTree = "<group>"; };
+		6BC7E5CF1AD6112800CECAFD /* PCLike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCLike.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,10 @@
 		6B68001B1AD350BE00A53032 = {
 			isa = PBXGroup;
 			children = (
+				6BC7E5C61AD6112800CECAFD /* PCComment.h */,
+				6BC7E5C71AD6112800CECAFD /* PCComment.m */,
+				6BC7E5CE1AD6112800CECAFD /* PCLike.h */,
+				6BC7E5CF1AD6112800CECAFD /* PCLike.m */,
 				6B6800701AD4199500A53032 /* PCPhoto.h */,
 				6B6800711AD4199500A53032 /* PCPhoto.m */,
 				6B68006C1AD353B300A53032 /* libsqlite3.dylib */,
@@ -301,10 +311,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BC7E5D01AD6112800CECAFD /* PCComment.m in Sources */,
 				6B6800301AD350BE00A53032 /* ViewController.m in Sources */,
 				6B6800721AD4199500A53032 /* PCPhoto.m in Sources */,
 				6B68002D1AD350BE00A53032 /* AppDelegate.m in Sources */,
 				6B68002A1AD350BE00A53032 /* main.m in Sources */,
+				6BC7E5D41AD6112800CECAFD /* PCLike.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +517,7 @@
 				6B6800491AD350BE00A53032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B68004A1AD350BE00A53032 /* Build configuration list for PBXNativeTarget "POC_ParsePhotoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +526,7 @@
 				6B68004C1AD350BE00A53032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

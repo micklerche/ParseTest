@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import <Parse/Parse.h>
 #import "PCPhoto.h"
+#import "PCLike.h"
+//#import "PCUser.h"
+
 
 
 @interface ViewController ()
@@ -151,6 +154,7 @@
             // Do something with the found objects
             for (PCPhoto *object in objects) {
                 NSLog(@"%@", object.comment);
+                self.photo = object;
             }
         } else {
             // Log details of the failure
@@ -158,6 +162,18 @@
         }
     }];
 }
+- (IBAction)onLikePhotos:(id)sender {
+    PCLike *likeMe = [PCLike new];
+
+    PFUser *currentUser = [PFUser currentUser];
+   // likeMe.user = currentUser;
+    likeMe.photo = self.photo;
+
+    [likeMe saveInBackground];
+
+}
+
+
 
 
 @end
